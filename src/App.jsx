@@ -1,3 +1,9 @@
+import Navbar from "./components/Navbar/Navbar";
+
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="dark:bg-gray-900 duration-200">
+      <Navbar />
+    </div>
+  );
 }
