@@ -43,7 +43,7 @@ const Navbar = () => {
                 Quick Links
                 <FaCaretDown className="duration-300 group-hover:rotate-180" />
               </div>
-              <div className=" hidden group-hover:block px-2 absolute left-0 top-full pt-4 pb-2 bg-white shadow-md dark:bg-gray-900 w-[200px] z-[101] rounded-md group-hover:text-gray-500">
+              <div className=" hidden group-hover:block px-2 absolute left-0 top-full pt-4 pb-2 bg-white shadow-md dark:shadow-primary/50 dark:bg-gray-900 w-[200px] z-[101] rounded-md group-hover:text-gray-500">
                 <ul className="space-y-2">
                   {DropdownLinks.map((link) => {
                     return (
@@ -67,7 +67,7 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search"
-              className=" dark:placeholder:text-gray-900 dark:group-hover:placeholder:text-gray-500 placeholder:text-white group-hover:placeholder:text-gray-500 caret-primary dark:text-white focus:outline-none dark:bg-gray-800 py-1 duration-300 group-hover:px-3 w-0 inline-block group-hover:w-[300px] group-hover:border border-gray-600 rounded-full"
+              className=" dark:placeholder:text-gray-900 dark:group-hover:placeholder:text-gray-500 placeholder:text-white group-hover:placeholder:text-gray-500 caret-primary dark:text-white focus:outline-none dark:bg-gray-800 py-1 duration-300 group-hover:px-3 w-0 inline-block group-hover:w-[300px] group-hover:border border-primary rounded-full"
             />
             <IoMdSearch className="absolute text-xl text-gray-500 -translate-y-1/2 top-1/2 right-3 group-hover:text-primary" />
           </div>
