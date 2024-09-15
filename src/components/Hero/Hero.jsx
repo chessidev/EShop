@@ -1,7 +1,7 @@
 import Slider from "react-slick";
-import image_01 from "../../assets/hero/headphone.png";
-import image_02 from "../../assets/category/vr.png";
-import image_03 from "../../assets/category/macbook.png";
+import image_01 from "../../assets/hero/headphone.webp";
+import image_02 from "../../assets/category/vr.webp";
+import image_03 from "../../assets/category/macbook.webp";
 import Button from "../Shared/Button";
 
 const settings = {

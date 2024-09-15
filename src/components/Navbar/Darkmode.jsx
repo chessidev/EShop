@@ -1,6 +1,6 @@
 import React from "react";
-import light_mode from "../../assets/website/light-mode-button.png";
-import dark_mode from "../../assets/website/dark-mode-button.png";
+import light_mode from "../../assets/website/light-mode-button.webp";
+import dark_mode from "../../assets/website/dark-mode-button.webp";
 
 const html = document.documentElement; // Select the html element
 
