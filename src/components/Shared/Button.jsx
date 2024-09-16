@@ -2,7 +2,9 @@
 const Button = ({ textColor, bgColor, text }) => {
   return (
     <button
-      className={`${textColor} ${bgColor} capitalize rounded-full w-fit px-8 py-2 hover:scale-110 duration-300 relative z-20`}
+      className={`${textColor || "text-white"} ${
+        bgColor || "bg-primary"
+      } capitalize rounded-full w-fit px-8 py-2 hover:scale-110 duration-300 relative z-20`}
     >
       {text}
     </button>
