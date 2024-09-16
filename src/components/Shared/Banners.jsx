@@ -10,7 +10,8 @@ const Banners = [
     productSale: "winter sale",
     productDiscription:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-    color: "primary",
+    productColor: "bg-primary",
+    textColor: "text-primary",
     image: headphone,
   },
   {
@@ -22,7 +23,8 @@ const Banners = [
     productSale: "winter sale",
     productDiscription:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-    color: "brandGreen",
+    productColor: "bg-brandGreen",
+    textColor: "text-brandGreen",
     image: watch,
   },
 ];

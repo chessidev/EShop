@@ -2,10 +2,12 @@
 import Button from "./Button";
 
 const Banner = ({ banner }) => {
+  console.log(banner.productColor);
+
   return (
     <section className="container py-12">
       <div
-        className={`bg-${banner.color} text-white min-h-[550px] md:min-h-fit rounded-3xl grid gap-6 md:grid-cols-3 items-center`}
+        className={`${banner.productColor}  text-white min-h-[550px] md:min-h-fit rounded-3xl grid gap-6 md:grid-cols-3 items-center`}
       >
         <div className="p-6 sm:p-8">
           <p className="text-sm uppercase">{banner.discount}</p>
@@ -30,7 +32,7 @@ const Banner = ({ banner }) => {
           </h2>
           <p className="text-sm">{banner.productDiscription}</p>
           <Button
-            textColor={`text-${banner.color}`}
+            textColor={banner.textColor}
             bgColor="bg-white"
             text="shop now"
           />
