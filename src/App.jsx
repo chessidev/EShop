@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Products from "./components/Products/Products";
 import Services from "./components/Services/Services";
 import Banners from "./components/Shared/Banners";
+import Blogs from "./components/Blogs/Blogs";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Banner banner={Banners[0]} />
       <Products />
       <Banner banner={Banners[1]} />
+      <Blogs />
     </div>
   );
 }
