@@ -8,7 +8,7 @@ const Products = () => {
         <h2 className="text-3xl font-bold text-center lg:text-4xl dark:text-white">
           Our Products
         </h2>
-        <p className="mt-2 text-sm text-center text-gray-400">
+        <p className="mt-2 text-sm text-center text-gray-600 dark:text-gray-400">
           Explore Our Products
         </p>
       </article>

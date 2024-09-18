@@ -35,19 +35,19 @@ const Navbar = ({ setOrderPopup }) => {
               return (
                 <li
                   key={link.id}
-                  className="items-center px-4 font-semibold text-gray-500 duration-300 dark:hover:text-white hover:text-black"
+                  className="items-center px-4 font-semibold text-gray-600 duration-300 dark:text-gray-400 dark:hover:text-white hover:text-black"
                 >
                   <a href={link.url}>{link.name}</a>
                 </li>
               );
             })}
             {/* Dropdown Section */}
-            <li className="relative px-4 font-semibold text-gray-500 duration-300 group hover:text-black dark:hover:text-white">
+            <li className="relative px-4 font-semibold text-gray-600 duration-300 dark:text-gray-400 group hover:text-black dark:hover:text-white">
               <div className="flex items-center gap-1">
                 Quick Links
                 <FaCaretDown className="duration-300 group-hover:rotate-180" />
               </div>
-              <div className=" hidden group-hover:block px-2 absolute left-0 top-full pt-4 pb-2 bg-white shadow-md dark:shadow-primary/50 dark:bg-gray-900 w-[200px] z-[101] rounded-md group-hover:text-gray-500">
+              <div className=" hidden group-hover:block px-2 absolute left-0 top-full pt-4 pb-2 bg-white shadow-md dark:shadow-primary/50 dark:bg-gray-900 w-[200px] z-[101] rounded-md group-hover:text-gray-600 dark:group-hover:text-gray-400">
                 <ul className="space-y-2">
                   {DropdownLinks.map((link) => {
                     return (

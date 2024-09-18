@@ -80,16 +80,19 @@ const Footer = () => {
               <li>
                 <a href="https://www.linkedin.com/in/eng-youssef-elsayed/">
                   <FaLinkedin className="text-3xl duration-300 hover:text-primary" />
+                  <span className="sr-only ">LinkedIn</span>
                 </a>
               </li>
               <li>
                 <a href="https://github.com/eng-youssef-elsayed">
                   <FaSquareGithub className="text-3xl duration-300 hover:text-primary" />
+                  <span className="sr-only ">GitHub</span>
                 </a>
               </li>
               <li>
                 <a href="https://web.facebook.com/engyoussefelsayed">
                   <FaFacebookSquare className="text-3xl duration-300 hover:text-primary" />
+                  <span className="sr-only ">Facebook</span>
                 </a>
               </li>
             </ul>

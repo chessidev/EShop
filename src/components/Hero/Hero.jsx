@@ -45,10 +45,7 @@ const Hero = () => {
             {Heros.map((hero) => {
               return (
                 <div key={hero.id} className="overflow-clip">
-                  <div
-                    data-aos="zoom-out"
-                    className=" px-4 sm:px-16 relative pb-12 min-h-[400px] sm:min-h-[600px] sm:flex items-center"
-                  >
+                  <div className=" px-4 sm:px-16 relative pb-12 min-h-[400px] sm:min-h-[600px] sm:flex items-center">
                     {/* image */}
                     <div className="right-0 max-h-full mx-auto lg:right-8 xl:right-24 bottom-1/2 sm:translate-y-1/2 sm:absolute">
                       <img
@@ -75,10 +72,7 @@ const Hero = () => {
                       >
                         {hero.subtitle}
                       </h2>
-                      <h2
-                        data-aos="zoom-in"
-                        className="text-5xl text-white uppercase sm:text-6xl lg:text-9xl dark:text-white/5"
-                      >
+                      <h2 className="text-5xl text-white uppercase sm:text-6xl lg:text-9xl dark:text-white/5">
                         {hero.category}
                       </h2>
                       <div
