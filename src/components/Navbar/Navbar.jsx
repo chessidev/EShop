@@ -71,9 +71,9 @@ const Navbar = ({ setOrderPopup }) => {
             <input
               type="text"
               placeholder="Search"
-              className=" dark:placeholder:text-gray-900 dark:group-hover:placeholder:text-gray-500 placeholder:text-white group-hover:placeholder:text-gray-500 caret-primary dark:text-white focus:outline-none dark:bg-gray-800 py-1 duration-300 group-hover:px-3 w-0 inline-block group-hover:w-[300px] group-hover:border border-primary rounded-full"
+              className=" dark:placeholder:text-gray-900 dark:group-hover:placeholder:text-gray-500 dark:focus:placeholder:text-gray-500 placeholder:text-white group-hover:placeholder:text-gray-500 focus:placeholder:text-gray-500 caret-primary dark:text-white focus:outline-none dark:bg-gray-800 py-1 duration-300 group-hover:px-3 focus:px-3 w-0 inline-block focus:w-[300px] group-hover:w-[300px] group-hover:border focus:border border-primary rounded-full"
             />
-            <IoMdSearch className="absolute text-xl text-gray-500 -translate-y-1/2 top-1/2 right-3 group-hover:text-primary" />
+            <IoMdSearch className="absolute text-xl text-gray-500 -translate-y-1/2 cursor-pointer top-1/2 right-3 group-hover:text-primary" />
           </div>
           {/* Cart Section */}
           <button className="relative p-3" onClick={showPopup}>

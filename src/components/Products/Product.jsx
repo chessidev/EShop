@@ -5,7 +5,7 @@ const Product = ({ product }) => {
   return (
     <div
       data-aos="fade-up"
-      data-aos-delay={`${product.id}00`}
+      data-aos-delay={`${(product.id / 2) * 100}`}
       className="group"
     >
       <div className="relative">

@@ -29,16 +29,16 @@ const Banner = ({ banner }) => {
           />
         </div>
         <div className="flex flex-col gap-4 p-6 sm:p-8">
-          <h2 data-aos="fade-in" className="text-xl font-bold capitalize ">
+          <h2 data-aos="zoom-in" className="text-xl font-bold capitalize ">
             {banner.productTitle}
           </h2>
           <h2
-            data-aos="fade-in"
+            data-aos="zoom-in"
             className="text-3xl font-bold capitalize sm:text-5xl"
           >
             {banner.productSale}
           </h2>
-          <p data-aos="fade-up" className="text-sm">
+          <p data-aos="zoom-in" className="text-sm">
             {banner.productDiscription}
           </p>
           <Button

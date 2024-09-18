@@ -45,7 +45,10 @@ const Hero = () => {
             {Heros.map((hero) => {
               return (
                 <div key={hero.id} className="overflow-clip">
-                  <div className=" px-4 sm:px-16 relative pb-12 min-h-[400px] sm:min-h-[600px] sm:flex items-center">
+                  <div
+                    data-aos="zoom-out"
+                    className=" px-4 sm:px-16 relative pb-12 min-h-[400px] sm:min-h-[600px] sm:flex items-center"
+                  >
                     {/* image */}
                     <div className="right-0 max-h-full mx-auto lg:right-8 xl:right-24 bottom-1/2 sm:translate-y-1/2 sm:absolute">
                       <img
@@ -57,7 +60,7 @@ const Hero = () => {
                     {/* Text */}
                     <article className="flex flex-col items-center justify-center gap-4 pt-16 font-bold text-center sm:items-start sm:text-left">
                       <h2
-                        data-aos="fade-down"
+                        data-aos="zoom-out"
                         data-aos-duration="500"
                         data-aos-once="true"
                         className="text-2xl capitalize sm:text-4xl lg:text-5xl dark:text-white"
@@ -65,21 +68,31 @@ const Hero = () => {
                         {hero.title}
                       </h2>
                       <h2
-                        data-aos="fade-down"
+                        data-aos="zoom-out"
                         data-aos-duration="500"
                         data-aos-once="true"
                         className="text-5xl capitalize sm:text-6xl lg:text-7xl dark:text-white "
                       >
                         {hero.subtitle}
                       </h2>
-                      <h2 className="text-5xl text-white uppercase sm:text-6xl lg:text-9xl dark:text-white/5">
+                      <h2
+                        data-aos="zoom-in"
+                        className="text-5xl text-white uppercase sm:text-6xl lg:text-9xl dark:text-white/5"
+                      >
                         {hero.category}
                       </h2>
-                      <Button
-                        text="shop by category"
-                        textColor="text-white"
-                        bgColor="bg-primary"
-                      />
+                      <div
+                        data-aos="fade-up"
+                        data-aos-duration="500"
+                        data-aos-once="true"
+                        data-aos-delay="300"
+                      >
+                        <Button
+                          text="shop by category"
+                          textColor="text-white"
+                          bgColor="bg-primary"
+                        />
+                      </div>
                     </article>
                   </div>
                 </div>

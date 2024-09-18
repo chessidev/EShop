@@ -1,7 +1,7 @@
 import { FaLinkedin, FaLocationArrow, FaSquareGithub } from "react-icons/fa6";
 import Button from "../Shared/Button";
-import { MdPhoneIphone } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
+import { IoMdPhonePortrait } from "react-icons/io";
 
 const Footer = () => {
   const visitGitHub = () => {
@@ -69,26 +69,26 @@ const Footer = () => {
           <article className="px-4 py-8 dark:text-white">
             <h3 className="mb-3 text-xl font-bold">Address</h3>
             <div className="flex items-center gap-3">
-              <FaLocationArrow />
+              <FaLocationArrow className="min-w-4" />
               <p>Giza, Egypt</p>
             </div>
             <div className="flex items-center gap-3 my-6">
-              <MdPhoneIphone />
+              <IoMdPhonePortrait className="min-w-4" />
               <p>+201114809161</p>
             </div>
             <ul className="flex items-center gap-3">
               <li>
-                <a href="">
+                <a href="https://www.linkedin.com/in/eng-youssef-elsayed/">
                   <FaLinkedin className="text-3xl duration-300 hover:text-primary" />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://github.com/eng-youssef-elsayed">
                   <FaSquareGithub className="text-3xl duration-300 hover:text-primary" />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://web.facebook.com/engyoussefelsayed">
                   <FaFacebookSquare className="text-3xl duration-300 hover:text-primary" />
                 </a>
               </li>
