@@ -6,6 +6,8 @@ import Products from "./components/Products/Products";
 import Services from "./components/Services/Services";
 import Banners from "./components/Shared/Banners";
 import Blogs from "./components/Blogs/Blogs";
+import Partners from "./components/Partners/Partners";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
       <Products />
       <Banner banner={Banners[1]} />
       <Blogs />
+      <Partners />
+      <Footer />
     </div>
   );
 }

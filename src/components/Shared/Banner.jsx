@@ -2,8 +2,6 @@
 import Button from "./Button";
 
 const Banner = ({ banner }) => {
-  console.log(banner.productColor);
-
   return (
     <section className="container py-12">
       <div
