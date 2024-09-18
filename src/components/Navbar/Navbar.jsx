@@ -3,7 +3,7 @@ import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import Darkmode from "./Darkmode";
 
 const links = [
-  { id: 1, name: "Home", url: "/" },
+  { id: 1, name: "Home", url: "./" },
   { id: 2, name: "Shop", url: "/#shop" },
   { id: 3, name: "About", url: "/#about" },
   { id: 4, name: "Blogs", url: "/#blogs" },
@@ -25,7 +25,7 @@ const Navbar = ({ setOrderPopup }) => {
         {/* Links Section */}
         <div className="flex items-center gap-4">
           <a
-            href="/"
+            href="./"
             className="text-2xl font-semibold tracking-widest uppercase text-primary sm:text-3xl"
           >
             eshop

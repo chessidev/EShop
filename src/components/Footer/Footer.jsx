@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container pt-5 pb-20 md:grid grid-cols-[auto_auto] justify-between">
         <article className="px-4 py-8">
           <a
-            href="/"
+            href="./"
             className="text-2xl font-semibold tracking-widest uppercase text-primary sm:text-3xl"
           >
             eshop
