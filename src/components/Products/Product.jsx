@@ -3,7 +3,11 @@ import Button from "../Shared/Button";
 
 const Product = ({ product }) => {
   return (
-    <div className="group">
+    <div
+      data-aos="fade-up"
+      data-aos-delay={`${product.id}00`}
+      className="group"
+    >
       <div className="relative">
         <img
           src={product.image || ""}

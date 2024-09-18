@@ -3,7 +3,10 @@ import { FaCarSide, FaWallet } from "react-icons/fa6";
 
 const Services = () => {
   return (
-    <section className="container grid grid-cols-2 py-14 md:py-20 gap-x-4 gap-y-8 lg:grid-cols-4">
+    <section
+      data-aos="fade-up"
+      className="container grid grid-cols-2 py-14 md:py-20 gap-x-4 gap-y-8 lg:grid-cols-4"
+    >
       <div className="flex flex-col gap-4 sm:flex-row">
         <FaCarSide className="text-4xl text-primary md:text-5xl" />
         <article>

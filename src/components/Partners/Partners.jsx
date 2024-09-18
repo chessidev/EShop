@@ -14,7 +14,10 @@ const partners = [
 const Partners = () => {
   return (
     <section className="hidden py-8 mt-24 bg-gray-200 md:block dark:bg-white/10">
-      <div className="container grid items-center grid-cols-5 gap-3 opacity-50 justify-items-center">
+      <div
+        data-aos="zoom-in"
+        className="container grid items-center grid-cols-5 gap-3 opacity-50 justify-items-center"
+      >
         {partners.map((partner) => (
           <img
             key={partner.id}

@@ -10,8 +10,20 @@ import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
 import Popup from "./components/Popup/Popup";
 import { useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 0,
+    });
+    Aos.refresh();
+  }, []);
+
   const [orderPopup, setOrderPopup] = useState(false);
   return (
     <div className="duration-300 dark:bg-gray-900">

@@ -8,13 +8,20 @@ const Banner = ({ banner }) => {
         className={`${banner.productColor}  text-white min-h-[550px] md:min-h-fit rounded-3xl grid gap-6 md:grid-cols-3 items-center`}
       >
         <div className="p-6 sm:p-8">
-          <p className="text-sm uppercase">{banner.discount}</p>
-          <h2 className="text-4xl font-bold uppercase lg:text-7xl">
+          <p data-aos="fade-down" className="text-sm uppercase">
+            {banner.discount}
+          </p>
+          <h2
+            data-aos="fade-in"
+            className="text-4xl font-bold uppercase lg:text-7xl"
+          >
             {banner.title}
           </h2>
-          <p className="text-sm capitalize">{banner.date}</p>
+          <p data-aos="fade-up" className="text-sm capitalize">
+            {banner.date}
+          </p>
         </div>
-        <div className="flex items-center justify-center">
+        <div data-aos="zoom-in" className="flex items-center justify-center">
           <img
             src={banner.image}
             alt="product image"
@@ -22,13 +29,18 @@ const Banner = ({ banner }) => {
           />
         </div>
         <div className="flex flex-col gap-4 p-6 sm:p-8">
-          <h2 className="text-xl font-bold capitalize ">
+          <h2 data-aos="fade-in" className="text-xl font-bold capitalize ">
             {banner.productTitle}
           </h2>
-          <h2 className="text-3xl font-bold capitalize sm:text-5xl">
+          <h2
+            data-aos="fade-in"
+            className="text-3xl font-bold capitalize sm:text-5xl"
+          >
             {banner.productSale}
           </h2>
-          <p className="text-sm">{banner.productDiscription}</p>
+          <p data-aos="fade-up" className="text-sm">
+            {banner.productDiscription}
+          </p>
           <Button
             textColor={banner.textColor}
             bgColor="bg-white"

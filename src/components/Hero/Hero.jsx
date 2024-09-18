@@ -56,10 +56,20 @@ const Hero = () => {
                     </div>
                     {/* Text */}
                     <article className="flex flex-col items-center justify-center gap-4 pt-16 font-bold text-center sm:items-start sm:text-left">
-                      <h2 className="text-2xl capitalize sm:text-4xl lg:text-5xl dark:text-white">
+                      <h2
+                        data-aos="fade-down"
+                        data-aos-duration="500"
+                        data-aos-once="true"
+                        className="text-2xl capitalize sm:text-4xl lg:text-5xl dark:text-white"
+                      >
                         {hero.title}
                       </h2>
-                      <h2 className="text-5xl capitalize sm:text-6xl lg:text-7xl dark:text-white ">
+                      <h2
+                        data-aos="fade-down"
+                        data-aos-duration="500"
+                        data-aos-once="true"
+                        className="text-5xl capitalize sm:text-6xl lg:text-7xl dark:text-white "
+                      >
                         {hero.subtitle}
                       </h2>
                       <h2 className="text-5xl text-white uppercase sm:text-6xl lg:text-9xl dark:text-white/5">

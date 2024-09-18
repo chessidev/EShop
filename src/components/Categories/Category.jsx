@@ -4,6 +4,7 @@ import Button from "../Shared/Button";
 const Category = ({ category }) => {
   return (
     <div
+      data-aos="fade-up"
       className={`overflow-clip py-10 pl-5 text-white bg-gradient-to-br ${
         category.bgClasses || ""
       } ${category.responsiveClasses || ""} rounded-3xl h-[320px] relative`}
