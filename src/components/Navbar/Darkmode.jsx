@@ -20,7 +20,7 @@ const Darkmode = () => {
     }
   }, [theme]);
   return (
-    <div className="relative">
+    <div className="relative cursor-pointer">
       <img
         src={light_mode}
         alt="light mode"

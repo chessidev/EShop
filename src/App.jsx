@@ -8,11 +8,14 @@ import Banners from "./components/Shared/Banners";
 import Blogs from "./components/Blogs/Blogs";
 import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
+import Popup from "./components/Popup/Popup";
+import { useState } from "react";
 
 export default function App() {
+  const [orderPopup, setOrderPopup] = useState(false);
   return (
     <div className="duration-300 dark:bg-gray-900">
-      <Navbar />
+      <Navbar setOrderPopup={setOrderPopup} />
       <Hero />
       <Categories />
       <Services />
@@ -22,6 +25,7 @@ export default function App() {
       <Blogs />
       <Partners />
       <Footer />
+      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
   );
 }

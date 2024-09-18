@@ -14,7 +14,11 @@ const DropdownLinks = [
   { id: 3, name: "Top Rated", url: "/#" },
 ];
 
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ setOrderPopup }) => {
+  const showPopup = () => {
+    setOrderPopup(true);
+  };
   return (
     <nav className="z-[100]">
       <div className="container flex items-center justify-between py-4">
@@ -72,7 +76,7 @@ const Navbar = () => {
             <IoMdSearch className="absolute text-xl text-gray-500 -translate-y-1/2 top-1/2 right-3 group-hover:text-primary" />
           </div>
           {/* Cart Section */}
-          <button className="relative p-3">
+          <button className="relative p-3" onClick={showPopup}>
             <FaCartShopping className="text-xl text-gray-500" />
             <span className="absolute top-0 right-0 flex items-center justify-center w-4 h-4 text-xs text-white rounded-full bg-primary">
               4
