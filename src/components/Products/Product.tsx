@@ -1,7 +1,15 @@
-/* eslint-disable react/prop-types */
 import Button from "../Shared/Button";
 
-const Product = ({ product }) => {
+type ProductProps = {
+  product: {
+    id: number;
+    name: string;
+    price: number;
+    image: string;
+  };
+};
+
+const Product = ({ product }: ProductProps) => {
   return (
     <div
       data-aos="fade-up"

@@ -1,7 +1,19 @@
-/* eslint-disable react/prop-types */
 import Button from "../Shared/Button";
 
-const Category = ({ category }) => {
+type CategoryProps = {
+  category: {
+    name: string;
+    image: string;
+    bgClasses?: string;
+    responsiveClasses?: string;
+    articleClasses?: string;
+    textColor: string;
+    bgColor: string;
+    imageClasses?: string;
+  };
+};
+
+const Category = ({ category }: CategoryProps) => {
   return (
     <div
       data-aos="fade-up"
@@ -15,17 +27,17 @@ const Category = ({ category }) => {
         <p className="pb-1 opacity-90 -gray-400">Enjoy</p>
         <p className="pb-1 text-2xl font-semibold">With</p>
         <h2 className="mb-2 text-4xl font-semibold capitalize opacity-20">
-          {category.name || ""}
+          {category.name}
         </h2>
         <Button
           text="browse"
-          textColor={category.textColor || ""}
-          bgColor={category.bgColor || ""}
+          textColor={category.textColor}
+          bgColor={category.bgColor}
         />
       </article>
       <img
-        src={category.image || ""}
-        alt={category.name || ""}
+        src={category.image}
+        alt={category.name}
         className={`absolute ${category.imageClasses || ""}`}
       />
     </div>

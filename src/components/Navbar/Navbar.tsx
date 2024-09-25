@@ -2,6 +2,10 @@ import { IoMdSearch } from "react-icons/io";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import Darkmode from "./Darkmode";
 
+type NavbarProps = {
+  setOrderPopup: (value: boolean) => void;
+};
+
 const links = [
   { id: 1, name: "Home", url: "./" },
   { id: 2, name: "Shop", url: "/#shop" },
@@ -14,8 +18,7 @@ const DropdownLinks = [
   { id: 3, name: "Top Rated", url: "/#" },
 ];
 
-// eslint-disable-next-line react/prop-types
-const Navbar = ({ setOrderPopup }) => {
+const Navbar = ({ setOrderPopup }: NavbarProps) => {
   const showPopup = () => {
     setOrderPopup(true);
   };

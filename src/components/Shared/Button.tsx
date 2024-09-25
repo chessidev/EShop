@@ -1,5 +1,11 @@
-// eslint-disable-next-line react/prop-types
-const Button = ({ textColor, bgColor, text, onClickHandler }) => {
+type ButtonProps = {
+  textColor?: string;
+  bgColor?: string;
+  text: string;
+  onClickHandler?: () => void;
+};
+
+const Button = ({ textColor, bgColor, text, onClickHandler }: ButtonProps) => {
   return (
     <button
       className={`${textColor || "text-white"} ${

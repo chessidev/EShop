@@ -2,11 +2,15 @@ import { useRef } from "react";
 import Button from "../Shared/Button";
 import { IoClose } from "react-icons/io5";
 
-// eslint-disable-next-line react/prop-types
-const Popup = ({ orderPopup, setOrderPopup }) => {
+type PopupProps = {
+  orderPopup: boolean;
+  setOrderPopup: (value: boolean) => void;
+};
+
+const Popup = ({ orderPopup, setOrderPopup }: PopupProps) => {
   const popupHide = orderPopup ? "flex" : "hidden";
   const container = useRef(null);
-  const clickHandeler = (e) => {
+  const clickHandeler = (e: React.MouseEvent<HTMLDivElement>) => {
     if (container.current === e.target) {
       setOrderPopup(false);
     }

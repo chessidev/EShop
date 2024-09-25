@@ -1,5 +1,15 @@
-/* eslint-disable react/prop-types */
-const Blog = ({ blog }) => {
+type blogLike = {
+  blog: {
+    id: number;
+    title: string;
+    image: string;
+    author: string;
+    date: string;
+    description: string;
+  };
+};
+
+const Blog = ({ blog }: blogLike) => {
   return (
     <div data-aos="fade-up" data-aos-delay={`${blog.id * 2}00`}>
       <div className="mb-2 rounded-3xl overflow-clip">

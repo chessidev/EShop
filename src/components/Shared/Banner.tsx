@@ -1,7 +1,20 @@
-/* eslint-disable react/prop-types */
 import Button from "./Button";
 
-const Banner = ({ banner }) => {
+type BannerProps = {
+  banner: {
+    productColor: string;
+    discount: string;
+    title: string;
+    date: string;
+    image: string;
+    productTitle: string;
+    productSale: string;
+    productDiscription: string;
+    textColor: string;
+  };
+};
+
+const Banner = ({ banner }: BannerProps) => {
   return (
     <section className="container py-12">
       <div
