@@ -37,7 +37,7 @@ const CartProduct = ({ product }: product) => {
           alt={product.name || ""}
           className="w-[50px] h-[50px] object-cover rounded-md"
         />
-        <div>
+        <div className="text-right md:text-left">
           <p className="font-semibold">{product.name || "Something"}</p>
           <p className="text-primary">${product.price * product.count}</p>
         </div>
