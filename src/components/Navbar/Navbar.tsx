@@ -1,6 +1,8 @@
+import { useContext, useEffect, useState } from "react";
 import { IoMdSearch } from "react-icons/io";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import Darkmode from "./Darkmode";
+import { ShoppingCartContext } from "../Shared/ShoppingCartContext";
 
 type NavbarProps = {
   setOrderPopup: (value: boolean) => void;
@@ -19,11 +21,14 @@ const DropdownLinks = [
 ];
 
 const Navbar = ({ setOrderPopup }: NavbarProps) => {
+  const { cartCount } = useContext(ShoppingCartContext);
+
   const showPopup = () => {
     setOrderPopup(true);
   };
+
   return (
-    <nav className="z-[100]">
+    <nav className="z-[100] fixed top-0 left-0 w-full backdrop-blur-3xl bg-white/50 dark:bg-gray-900/50">
       <div className="container flex items-center justify-between py-4">
         {/* Links Section */}
         <div className="flex items-center gap-4">
@@ -74,15 +79,19 @@ const Navbar = ({ setOrderPopup }: NavbarProps) => {
             <input
               type="text"
               placeholder="Search"
-              className=" dark:placeholder:text-gray-900 dark:group-hover:placeholder:text-gray-500 dark:focus:placeholder:text-gray-500 placeholder:text-white group-hover:placeholder:text-gray-500 focus:placeholder:text-gray-500 caret-primary dark:text-white focus:outline-none dark:bg-gray-800 py-1 duration-300 group-hover:px-3 focus:px-3 w-0 inline-block focus:w-[300px] group-hover:w-[300px] group-hover:border focus:border border-primary rounded-full"
+              className=" dark:placeholder:text-gray-900 dark:group-hover:placeholder:text-gray-500 dark:focus:placeholder:text-gray-500 placeholder:text-white group-hover:placeholder:text-gray-500 focus:placeholder:text-gray-500 caret-primary dark:text-white focus:outline-none dark:bg-gray-800 py-1 duration-300 group-hover:pl-3 focus:pl-3 group-hover:pr-8 focus:pr-8 w-0 inline-block focus:w-[170px] group-hover:w-[170px] xl:focus:w-[300px] xl:group-hover:w-[300px] group-hover:border focus:border border-primary rounded-full"
             />
             <IoMdSearch className="absolute text-xl text-gray-500 -translate-y-1/2 cursor-pointer top-1/2 right-3 group-hover:text-primary" />
           </div>
           {/* Cart Section */}
           <button className="relative p-3" onClick={showPopup}>
             <FaCartShopping className="text-xl text-gray-500" />
-            <span className="absolute top-0 right-0 flex items-center justify-center w-4 h-4 text-xs text-white rounded-full bg-primary">
-              4
+            <span
+              className={`absolute top-0 right-0 items-center justify-center w-5 h-5 text-xs text-white rounded-full bg-primary ${
+                cartCount === 0 ? "hidden" : "flex"
+              }`}
+            >
+              {cartCount < 100 ? cartCount : 99}
             </span>
           </button>
           {/* Dark Mode */}

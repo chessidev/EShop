@@ -38,7 +38,7 @@ const Heros = [
 
 const Hero = () => {
   return (
-    <section className="container">
+    <section className="container pt-20">
       <div className="flex items-center justify-center min-h-[550px] sm:min-h-[650px] rounded-3xl duration-300 dark:from-gray-900 from-gray-300 to-gray-100 bg-gradient-to-r dark:to-gray-800">
         <div className="w-full">
           <Slider {...settings}>

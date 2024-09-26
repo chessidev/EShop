@@ -13,7 +13,7 @@ const Products = () => {
         </p>
       </article>
       {/* Cards Setion */}
-      <div className="grid justify-center my-10 gap-x-5 gap-y-7 sm:grid-cols-2 md:grid-cols-4">
+      <div className="grid justify-center my-10 gap-x-5 gap-y-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {productsArray.map((product) => (
           <Product key={product.id} product={product} />
         ))}
