@@ -47,6 +47,7 @@ const CartProduct = ({ product }: product) => {
           <Button
             circle={true}
             text="-"
+            customStyles="text-xl font-bold"
             onClickHandler={() => {
               decreaseAmount(product);
               setQuantity(getItemQuantity(product));
@@ -56,6 +57,7 @@ const CartProduct = ({ product }: product) => {
           <p>{quantity}</p>
           <Button
             text="+"
+            customStyles="text-xl font-bold"
             circle={true}
             onClickHandler={() => {
               increaseAmount(product);

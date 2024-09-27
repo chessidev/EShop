@@ -54,6 +54,7 @@ const Product = ({ product }: ProductProps) => {
                 <Button
                   circle={true}
                   text="-"
+                  customStyles="text-xl font-bold"
                   onClickHandler={() => {
                     decreaseAmount(product);
                     setQuantity(getItemQuantity(product));
@@ -66,6 +67,7 @@ const Product = ({ product }: ProductProps) => {
                 <Button
                   circle={true}
                   text="+"
+                  customStyles="text-xl font-bold"
                   onClickHandler={() => {
                     increaseAmount(product);
                     setQuantity(getItemQuantity(product));
