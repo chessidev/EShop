@@ -28,7 +28,7 @@ const Navbar = ({ setOrderPopup }: NavbarProps) => {
   };
 
   return (
-    <nav className="z-[100] fixed top-0 left-0 w-full backdrop-blur-3xl bg-white/50 dark:bg-gray-900/50">
+    <nav className="z-[100] fixed top-0 left-0 w-full backdrop-blur-3xl bg-white/50 dark:bg-gray-900/50 shadow-md shadow-primary/30">
       <div className="container flex items-center justify-between py-4">
         {/* Links Section */}
         <div className="flex items-center gap-4">
@@ -55,7 +55,7 @@ const Navbar = ({ setOrderPopup }: NavbarProps) => {
                 Quick Links
                 <FaCaretDown className="duration-300 group-hover:rotate-180" />
               </div>
-              <div className=" hidden group-hover:block px-2 absolute left-0 top-full pt-4 pb-2 bg-white shadow-md dark:shadow-primary/50 dark:bg-gray-900 w-[200px] z-[101] rounded-md group-hover:text-gray-600 dark:group-hover:text-gray-400">
+              <div className=" hidden group-hover:block px-2 absolute left-0 top-full pt-4 pb-2 bg-white shadow-md shadow-primary/50 dark:bg-gray-900 w-[200px] z-[101] rounded-md group-hover:text-gray-600 dark:group-hover:text-gray-400">
                 <ul className="space-y-2">
                   {DropdownLinks.map((link) => {
                     return (
